@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DashboardCards() {
+function Tasks() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function DashboardCards() {
   )
 }
 
-export default DashboardCards
+export default Tasks

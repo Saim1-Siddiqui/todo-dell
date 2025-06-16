@@ -1,15 +1,35 @@
-import React from "react";
-import Dashboard from "./components/Dashboard.jsx";  
-import Sidebar from "./components/SideBar.jsx";      
-import "./style/style.css";                          
+
+import { useState } from 'react'
+import React from 'react'
+import {NavLink} from "react-router-dom";
+import {BrowserRouter,Router,Routes,Route} from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+
+import Completed from './components/Completed'
+import Setting from './components/Setting'
+import Tasks from './components/Tasks'
 
 function App() {
+  
+
   return (
-    <Sidebar>
-      <Dashboard />
-    </Sidebar>
-  );
+    
+    
+    <div className="app-container">
+    
+      <div className="main-content">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/completed" element={<Completed />} />
+          <Route path="/Setting" element={<Setting />} />
+        </Routes>
+      </div>
+    </div>
+ 
+    
+  )
 }
 
-export default App;
+export default App
 

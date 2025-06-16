@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DashboardHeader() {
+function Completed() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function DashboardHeader() {
   )
 }
 
-export default DashboardHeader
+export default Completed

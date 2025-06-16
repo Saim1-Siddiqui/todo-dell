@@ -9,13 +9,14 @@ import Setting from './components/Setting.jsx'
 import Tasks from './components/Tasks.jsx'
 import SideBar from './components/SideBar.jsx'
 import { BrowserRouter } from 'react-router'
+import './style/style.css'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <App />
     <Header/>
+    <App />
     <Dashboard/>
     <Completed/>
     <Tasks/>
